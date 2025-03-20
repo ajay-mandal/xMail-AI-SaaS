@@ -8,8 +8,11 @@ import { TRPCReactProvider } from "@/trpc/react";
 
 export const metadata: Metadata = {
   title: "xMail",
-  description: "Universal Email Client with AI assistance",
-  icons: [{ rel: "icon", url: "/logo.svg" }],
+  description: "xMail AI SaaS - Your all-in-one Mailbox Client with AI assistance",
+  icons: [
+    { rel: "icon", url: "/logo-light.svg", media: "(prefers-color-scheme: dark)" },
+    { rel: "icon", url: "/logo-dark.svg", media: "(prefers-color-scheme: light)" },
+  ],
 };
 
 export default function RootLayout({
